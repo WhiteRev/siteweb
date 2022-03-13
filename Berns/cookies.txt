@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+chezberns.com	TRUE	/	FALSE	1999999999	300gpBAK	R4178785959
+chezberns.com	TRUE	/	FALSE	1999999999	300gpD	R1575146034
+

@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.photoaccess.org.au	TRUE	/	FALSE	1999999999	__cfduid	d00d2f1922e691cceb983946696d26e411555784575
+www.photoaccess.org.au	TRUE	/	FALSE	1999999999	PHPSESSID	bf052325f3e24f7ef199fe22ebee500f
+
