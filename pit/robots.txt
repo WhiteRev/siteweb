@@ -1,0 +1,3 @@
+User-agent: *   # robots to disallow
+Disallow:       # / to prevent indexing all from this path
+Sitemap: https://pitbull-coaching.fr/sitemap.xml

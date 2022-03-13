@@ -1,0 +1,393 @@
+$bordeaux :#6E0005;
+$grisclair :#C1C1C1;
+$grisfoncer: #3E3E3E;
+$noir:#19171C;
+$white: rgb(255, 255, 255);
+$grey: rgb(127, 127, 127);
+$black: rgb(0, 0, 0);
+
+$rouge: #6E0005 ;
+$bleu: #0d385c ;
+$bleu_transp: rgba(13,56,92,0.8) ;
+$rouge_transp: rgba(216,0,39,1) ;
+$gris: #EFEFEF;
+
+$vert: #97c855 ;
+$violet: #7e6991;
+$beige: #ede3d9;
+$marron: #574a42;
+
+$header_height: 80px;
+$header_fontsz: 12pt;
+$header_fontfam: Myriad Pro ; 
+$logo_fontfam: Myriad Pro ; 
+$semibold: 500;
+
+$title_fontsz: 16pt;
+
+$footer_height: 96px;
+$footer_fontsz: 16px;
+
+$body_maxwidth: 1024px;
+$media_small_limit: 721px;
+
+
+
+
+* {
+  //border: 1px dotted black;
+  //height: 100%;
+  //width: 100%;
+}
+
+//  ----------------------------  init  -----------------------------------  //
+body {
+  //out
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: $header_height;
+  //in
+  padding: 0;
+  font-size: $header_fontsz ;
+  color: $black;
+  background-color: $white;
+}//body
+
+header, footer, div, a, img, span, input, textarea, button, form, h1, h2, h3 {
+  // outside:
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  margin: 0;
+  //overflow: hidden; // FIXME this here ? can be usefull for nowrap and contain large images
+  // not here as it prevents position usage ?
+  // FIXED: just use it when needed around some nowrap
+  // inside:
+  white-space: normal;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-align: center;
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+input, textarea {
+  white-space: pre-wrap;
+}
+input.ib_radioinput {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+button {
+  background-color: inherit;
+}
+
+//  ----------------------------  out classes  ----------------------------  //
+
+.ib_visibilitynone { visibility: hidden; }
+
+.ib_show { display: inline-block; }
+.ib_hide { display: none; }
+
+.ib_showsmallonly { display: inline-block;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_showsmallonly { display: none; } }
+
+.ib_showlargeonly { display: none;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_showlargeonly { display: inline-block; } }
+
+@media only screen and (max-width: ($media_small_limit - 1)) {
+  .ib_forceshowonlysmall { display: inline-block !important; } }
+@media only screen and (max-width: ($media_small_limit - 1)) {
+  .ib_forcehideonlysmall { display: none !important; } }
+
+.ib_height1 { height: 100%; }
+
+.ib_widthauto { width: auto; }
+.ib_box { width: 100%; }
+.ib_halfbox { width: 49%; }
+.ib_thirdbox { width: 33%; }
+.ib_2thirdbox { width: 66%; }
+.ib_quarterbox { width: 24%; }
+.ib_3quarterbox { width: 74%; }
+
+.ib_box_col {
+  width: 100%;
+  max-width: $body_maxwidth;
+}
+.ib_box_title {
+  width: 100%;
+  padding: 96px 0 32px 0;
+  font-size: $title_fontsz;
+  font-weight: $semibold;
+}
+
+.ib_margintblow { margin-top: 4px; margin-bottom: 4px; }
+.ib_margintbmid { margin-top: 8px; margin-bottom: 8px; }
+.ib_margintbbig { margin-top: 16px; margin-bottom: 16px; }
+
+.ib_box_half {
+  width: 100%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_box_half {
+    width: 49%;
+  } }
+
+.ib_box_third {
+  width: 100%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_box_third {
+    width: 33%;   // using inline-block, 1% margin will always be enought iff
+  } }             // there is no white space or indentation between boxes
+.ib_box_2third {
+  width: 100%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_box_2third {
+    width: 66%;
+  } }
+
+.ib_box_quarter {
+  width: 100%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_box_quarter {
+    width: 24%;
+  } }
+.ib_box_3quarter {
+  width: 100%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_box_3quarter {
+    width: 74%;
+  } }
+.ib_halfbox_quarter {
+  width: 49%;
+} @media only screen and (min-width: $media_small_limit) {
+  .ib_halfbox_quarter {
+    width: 24%;
+  } }
+
+.ib_verticalalignmiddle { vertical-align: middle; }
+.ib_verticalaligntop { vertical-align: top; }
+.ib_verticalalignbottom { vertical-align: bottom; }
+
+.ib_positionfixedoverallscreen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  line-height: 100vh;
+}
+.ib_positionabsolutemidcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    //FIXME error on firefox... transform: translate(-50%, -50%);
+}
+
+//  ----------------------------  in classes  -----------------------------  //
+.ib_whitespacenowrap { white-space: nowrap; }
+
+.ib_paddinglow { padding: 4px; }
+.ib_paddingmid { padding: 8px; }
+.ib_paddingbig { padding: 32px; }
+
+.ib_button { padding: 6px 12px 6px 12px; }
+.ib_button_a { 
+  color: $white;
+  background-color: $bleu;
+  padding-left: 12px;
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-weight: $semibold;
+  font-size: 10pt;
+  cursor: pointer;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: auto 100%; //w h
+  background-position: right center;
+  padding-right: 52px;
+}
+
+.ib_bordergrey1px { border: 1px solid $gris; }
+.ib_bordergreen { border: 10px solid $vert; }
+
+.ib_borderradius { border-radius: 5px; }
+.ib_borderradiuslow { border-radius: 2px; }
+.ib_borderradiussmall { border-radius: 4px; }
+.ib_borderradius5px { border-radius: 5px; }
+.ib_borderradius1 { border-radius: 100%; }
+
+.ib_fontsizelow { font-size: 8px; }
+.ib_fontsizesmall { font-size: 10px; }
+.ib_fontsizenormal { font-size: $header_fontsz; }
+.ib_fontsizebig { font-size: 20px; }
+
+.ib_white { color: $white; }
+.ib_grey { color: $grey; }
+.ib_grey2 { color: $gris; }
+.ib_black { color: $black; }
+.ib_red { color: $rouge; }
+.ib_green { color: $vert; }
+.ib_blue { color: $bleu; }
+.ib_violet { color: $violet; }
+.ib_beige { color: $beige; }
+.ib_brown { color: $marron; }
+
+.ib_bgwhite { background-color: $white; }
+.ib_bggrey { background-color: $grey; }
+.ib_bggrey2 { background-color: $gris; }
+.ib_bgblack { background-color: $black; }
+.ib_bgred { background-color: $rouge; }
+.ib_bggreen { background-color: $vert; }
+.ib_bgblue { background-color: $bleu; }
+.ib_bgviolet { background-color: $violet; }
+.ib_bgbeige { background-color: $beige; }
+.ib_bgbrown { background-color: $marron; }
+
+.ib_bgblackhalf { background-color: rgba(0, 0, 0, 0.5) ; }
+
+.ib_textalignleft { text-align: left; }
+.ib_textaligncenter { text-align: center; }
+.ib_textalignjustify { text-align: justify; }
+.ib_textalignright { text-align: right; }
+
+.ib_bgimg {
+  background-repeat: no-repeat;
+  background-size: 100% auto; //w h
+  background-position: center top;
+  //background-clip: padding-box;
+}
+
+#ib_ifnojs {
+  position: fixed;
+  bottom: 0vh;
+  z-index: 10;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.ib_ifnojshover:hover {
+  // add opacity
+  // cannot change text so should change the main texts and replace with good text with js ?
+}
+
+
+
+
+
+// Rev_class// 
+// txt //
+.rc_text_xs{
+  font-size: 70%;
+
+}
+.rc_text_s{
+  font-size: 80%;
+
+}
+.rc_text_m{
+  font-size: 150%;
+
+}
+.rc_text_l{
+  font-size: 200%;
+
+}
+.rc_text_xl{
+  font-size: 250%;
+}
+.rc_fw{
+    font-weight: 900;
+}
+// pic // 
+.rc_pic_xxs{
+  width: 25%;
+}
+.rc_pic_xs{
+  width: 50%;
+}
+.rc_pic_s{
+  width: 80%;
+}
+.rc_pic_m{
+  width: 150%;
+}
+.rc_pic_l{
+  width: 200%;
+}
+// pad //
+.rc_padl_xs{
+  padding-left: 25px; 
+}
+.rc_padl_s{
+  padding-left: 50px; 
+}
+.rc_padl_m{
+  padding-left: 100px; 
+}
+.rc_padl_l{
+  padding-left: 150px; 
+}
+
+.rc_padr_xs{
+  padding-right: 25px; 
+}
+.rc_padr_s{
+  padding-right:  50px; 
+}
+.rc_padr_m{
+  padding-right:  100px; 
+}
+.rc_padr_l{
+  padding-right:  150px; 
+}
+.rc_padt_xs{
+  padding-top:  25px; 
+}
+.rc_padb_s{
+  padding-top:  50px; 
+}
+.rc_padt_m{
+  padding-top:  100px; 
+}
+.rc_padt_l{
+  padding-top:  150px; 
+}
+.rc_padb_xs{
+  padding-bottom: 25px; 
+}
+.rc_padb_s{
+  padding-bottom:   50px; 
+}
+.rc_padb_m{
+  padding-bottom:  100px; 
+}
+.rc_padb_l{
+  padding-bottom: 150px; 
+}
+.rc_pad_xs{
+  padding: 25px; 
+}
+.rc_pad_s{
+  padding:   50px; 
+}
+.rc_pad_m{
+  padding:  100px; 
+}
+.rc_pad_l{
+  padding: 150px; 
+}
+.rc_mar_s{
+  margin-bottom: 12px;}

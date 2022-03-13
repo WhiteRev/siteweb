@@ -1,0 +1,858 @@
+body {
+  color: white;
+  background-color: #6E0005;
+  font-family: 'Overpass'; }
+
+.ib_button_a {
+  color: white;
+  background-color: #0d385c;
+  padding-left: 12px;
+  margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 10pt;
+  cursor: pointer;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+  padding-right: 52px; }
+
+.ib_bordergrey1px {
+  border: 1px solid #EFEFEF; }
+
+.ib_bordergreen {
+  border: 10px solid #97c855; }
+
+.ib_white {
+  color: white; }
+
+.ib_grey {
+  color: #7f7f7f; }
+
+.ib_grey2 {
+  color: #EFEFEF; }
+
+.ib_black {
+  color: black; }
+
+.ib_red {
+  color: #6E0005; }
+
+.ib_green {
+  color: #97c855; }
+
+.ib_blue {
+  color: #0d385c; }
+
+.ib_violet {
+  color: #7e6991; }
+
+.ib_beige {
+  color: #ede3d9; }
+
+.ib_brown {
+  color: #574a42; }
+
+.ib_bgwhite {
+  background-color: white; }
+
+.ib_bggrey {
+  background-color: #7f7f7f; }
+
+.ib_bggrey2 {
+  background-color: #EFEFEF; }
+
+.ib_bgblack {
+  background-color: black; }
+
+.ib_bgred {
+  background-color: #6E0005; }
+
+.ib_bggreen {
+  background-color: #97c855; }
+
+.ib_bgblue {
+  background-color: #0d385c; }
+
+.ib_bgviolet {
+  background-color: #7e6991; }
+
+.ib_bgbeige {
+  background-color: #ede3d9; }
+
+.ib_bgbrown {
+  background-color: #574a42; }
+
+.ib_bggrisfr {
+  background-color: #3E3E3E; }
+
+.ib_bggriscl {
+  background-color: #C1C1C1; }
+
+.ib_bgblackhalf {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.pit_bgcoaching {
+  background-image: url("../img/encart-coaching.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment:fixed ;
+  background-size: auto 100%; 
+    background-color:  #3E3E3E;
+
+}
+.pit_bgmedia {
+  background-image: url("../img/encart-pole-media.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: auto 100%; 
+    background-color:  #3E3E3E;
+
+}
+.pit_bgdesign {
+  background-image: url("../img/encart_design.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: auto 100%; 
+    background-color:  #3E3E3E;
+
+}
+.pit_bgref {
+  background-image: url("../img/encart-referencement.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: auto ; 
+  background-color:  #3E3E3E;
+  ; }
+
+.pit_textballon {
+  font-size: 15px; }
+
+#pit_navmenu {
+  background-color: #6E0005; }
+
+#rev_navmenu > a {
+  font-weight: bold; }
+
+#philosophie {
+  background-color: white;
+  color: black; }
+
+#activites {
+  background-color: #C1C1C1; }
+
+.pit_button_a {
+  padding: 24px 30px 24px 30px;
+  font-size: 150%;
+  font-weight: 900px; }
+
+.pit_button_b {
+  padding: 7px 15px 10px 6px;
+  font-size: 150%;
+  font-weight: 900px;
+  width: 50%;
+  margin-bottom: 12px;
+  background-color: wheat; }
+
+.pit_padding_a {
+  padding-bottom: 15px; }
+
+.pit_padding_b {
+  padding: 12px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 20px; }
+
+.pit_petitcadre {
+  width: calc(100% - 50px);
+  margin-bottom: 12px;
+  padding: 25px 25px 0 25px; }
+
+.pit_text_petitcadre {
+  padding-bottom: 12px;
+  font-size: 130; }
+
+@media only screen and (max-width: 1223px) {
+  .pit_text_petitcadre {
+    padding-bottom: 12px;
+    font-size: 100%; } }
+@media only screen and (max-width: 1000px) {
+  .pit_text_petitcadre {
+    padding-bottom: 12px;
+    font-size: 80%; } }
+.pit_chan_form {
+  width: calc(100% - 200px);
+  margin-bottom: 12px;
+  border: solid;
+  border-color: white;
+  border-width: 1px; }
+
+.mon_chien_ballon {
+  width: 100%; }
+
+@media only screen and (max-width: 721px) {
+  .mon_chien_ballon {
+    width: 70%; } }
+.pit_titre_a {
+  font-size: 150%;
+  font-weight: 900; }
+
+.pit_text_a {
+  font-size: 200%;
+  font-weight: 900;
+  padding-left: 50px; }
+
+.pit_nav_a {
+  font-size: 120%;
+  font-weight: 900;
+  width: 80%; }
+
+@media only screen and (max-width: 600px) {
+  .pit_nav_a {
+    font-weight: 900;
+    width: 90%; } }
+@media only screen and (max-width: 425px) {
+  .pit_nav_a {
+    font-weight: 900;
+    width: 90%;
+    font-size: 90%; } }
+@media only screen and (max-width: 385px) {
+  .pit_nav_a {
+    font-weight: 900;
+    width: 90%;
+    font-size: 90%; } }
+.pit_move_img {
+  position: absolute;
+  top: 10px;
+  left: 10px; }
+
+.rev_padding_l {
+  font-weight: bold; }
+
+.rev_padding_navl {
+  padding-left: 75px; }
+
+.rev_padding_navr {
+  padding-right: 75px; }
+
+.ib_js_carousel {
+  width: 80%; }
+
+.bande {
+  padding-bottom: 100px; }
+
+.apythagore:hover {
+  background-image: url("img/pythagore.png"); }
+
+.rc_formpadl {
+  padding-left: 10%; }
+
+@media only screen and (min-width: 721px) {
+  .rc_formpad {
+    padding-left: 30%; } }
+.rc_formpadr {
+  padding-right: 10%; }
+
+@media only screen and (min-width: 721px) {
+  .rc_formpad {
+    padding-right: 30%; } }
+.rc_form {
+  width: calc(100% - 200px);
+  margin-bottom: 12px;
+  border: solid;
+  border-color: white;
+  border-width: 1px; }
+
+.rc_textformh2 {
+  font-size: 120%;
+  padding-top: 3%;
+  font-weight: bold;
+  padding-bottom: 10%; }
+
+.rc_textformtxt {
+  font-size: 100%;
+  font-weight: normal; }
+
+.rc_textformred {
+  font-size: 250%; }
+
+.rc_padmenuform {
+  padding-right: 20%;
+  padding-left: 20%; }
+
+@media only screen and (max-width: 721px) {
+  .rc_padmenuform {
+    padding-right: 10%;
+    padding-left: 10%; } }
+.rc_pythapadimg {
+  width: 100%;
+  padding-top: 20%; }
+
+.rc_pythaimg {
+  width: 100%;
+  margin: 0%; }
+
+@media only screen and (max-width: 721px) {
+  .rc_pythaimg {
+    width: 100%;
+    margin: 0%; } }
+.box_pyth_img {
+  width: 20%;
+  padding-top: 5%;
+  margin-left: 6%; }
+
+.box_pyth {
+  width: 73%; }
+
+.box_pyth_p {
+  margin-left: 0%; }
+
+.pyth_h2 {
+  font-size: 250%;
+  text-align: justify;
+  padding-bottom: 10%; }
+
+.pyth_soustitre {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  padding: 2%; }
+
+.pyth_p {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left; }
+
+.rc_text_l {
+  font-size: 130%;
+  text-align: justify; }
+
+.rc_text_ln {
+  font-size: 130%; }
+
+.pit_form_magic {
+  font-size: 130%;
+  padding: 1%;
+  background-color: #3E3E3E;
+  color: white; }
+
+@media only screen and (max-width: 721px) {
+  .pit_form_magic {
+    font-size: 100%;
+    padding: 1%;
+    background-color: #3E3E3E;
+    color: white; } }
+.pit_form_magic_block {
+  font-size: 130%;
+  padding: 1%;
+  background-color: #3E3E3E;
+  color: white;
+  padding-bottom: 20%; }
+
+@media only screen and (max-width: 721px) {
+  .pit_form_magic_block {
+    font-size: 100%;
+    padding: 1%;
+    background-color: #3E3E3E;
+    color: white;
+    padding-bottom: 20%; } }
+.rc_text_besoin {
+  font-size: 200%; }
+
+.textballon_h1 {
+  font-size: 250%; }
+
+@media only screen and (max-width: 1210px) {
+  .textballon_h1 {
+    font-size: 230%; } }
+@media only screen and (max-width: 855px) {
+  .textballon_h1 {
+    font-size: 200%; } }
+@media only screen and (max-width: 721px) {
+  .textballon_h1 {
+    font-size: 260%; } }
+@media only screen and (max-width: 495px) {
+  .textballon_h1 {
+    font-size: 240%; } }
+@media only screen and (max-width: 465px) {
+  .textballon_h1 {
+    font-size: 160%; } }
+.textballon_h2 {
+  font-size: 140%; }
+
+@media only screen and (max-width: 1210px) {
+  .textballon_h2 {
+    font-size: 170%; } }
+@media only screen and (max-width: 855px) {
+  .textballon_h2 {
+    font-size: 130%; } }
+@media only screen and (max-width: 721px) {
+  .textballon_h2 {
+    font-size: 170%; } }
+@media only screen and (max-width: 495px) {
+  .textballon_h2 {
+    font-size: 150%; } }
+@media only screen and (max-width: 465px) {
+  .textballon_h2 {
+    font-size: 110%; } }
+.textballon_p {
+  font-size: 100%; }
+
+@media only screen and (max-width: 930px) {
+  .textballon_p {
+    font-size: 90%; } }
+@media only screen and (max-width: 855px) {
+  .textballon_p {
+    font-size: 75%; } }
+@media only screen and (max-width: 721px) {
+  .textballon_p {
+    display: none; } }
+.textballon_p2 {
+  display: none; }
+
+@media only screen and (max-width: 721px) {
+  .textballon_p2 {
+    font-size: 150%;
+    display: block; } }
+@media only screen and (max-width: 465px) {
+  .textballon_p2 {
+    font-size: 115%;
+    display: block; } }
+.textballon_general {
+  width: 100%;
+  text-align: left; }
+
+@media only screen and (max-width: 721px) {
+  .textballon_general {
+    text-align: left;
+    margin-left: 20%; } }
+@media only screen and (max-width: 691px) {
+  .textballon_general {
+    text-align: left;
+    margin-left: 10%; } }
+@media only screen and (max-width: 415px) {
+  .textballon_general {
+    text-align: left;
+    margin-left: 5%; } }
+.redmagique {
+  background-color: #9E0005; }
+
+.grismagique {
+  background-color: #AEAEAE; }
+
+.formuleh1 {
+  font-size: 300%;
+  padding-bottom: 10%; }
+
+@media only screen and (max-width: 721px) {
+  .formuleh1 {
+    font-size: 250%;
+    padding-bottom: 10%; } }
+@media only screen and (max-width: 415px) {
+  .formuleh1 {
+    font-size: 200%;
+    padding-bottom: 10%; } }
+@media only screen and (max-width: 322px) {
+  .formuleh1 {
+    font-size: 150%;
+    padding-bottom: 10%; } }
+.hauteur_body {
+  margin-top: 5%; }
+
+.reponse_barnav {
+  width: 16%; }
+
+.reponse_ballon {
+  width: 15%; }
+
+.partieballon {
+  width: 90%;
+  margin-top: 0%; }
+
+@media only screen and (max-width: 1210px) {
+  .partieballon {
+    width: 90%;
+    margin-top: -7%; } }
+.pit_formule_case {
+  width: 85%;
+  padding-bottom: 10%; }
+
+@media only screen and (max-width: 721px) {
+  .pit_formule_case {
+    width: 90%;
+    padding-bottom: 10%; } }
+.rc_text_besoin_h {
+  font-size: 200%;
+  padding-top: 10%; }
+
+.rc_text_besoin_p {
+  font-size: 110%;
+  padding-bottom: 10%; }
+
+.special_je_suis_un_genie {
+  width: 70%;
+  padding-left: 10%;
+  text-align: justify; }
+
+@media only screen and (max-width: 721px) {
+  .special_je_suis_un_genie {
+    width: 90%;
+    padding-left: 0%;
+    text-align: justify; } }
+.bras_enorme {
+  width: 40%; }
+
+.image_ballon_formule {
+  width: 35%; }
+
+@media only screen and (max-width: 721px) {
+  .image_ballon_formule {
+    width: 75%; } }
+.bande_blanche {
+  width: 100%;
+  position: absolute;
+  top: 256%;
+  left: 0%;
+  background-color: white;
+  padding-top: 6%; }
+
+.box_newton_img {
+  width: 20%; }
+
+.newton_img {
+  width: 100%;
+  margin-left: -40%; }
+
+.box_newton {
+  width: 73%;
+  margin-right: 0%; }
+
+.box_newton_p {
+  margin-left: 0%; }
+
+.newton_h2 {
+  font-size: 250%;
+  text-align: justify;
+  padding-bottom: 10%;
+  margin-left: 0%; }
+
+.newton_soustitre {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 2%;
+  margin-left: 0%; }
+
+.newton_p {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left; }
+
+.box_gali {
+  width: 73%; }
+
+.box_gali_p {
+  margin-left: 0%; }
+
+.box_gali_img {
+  width: 20%; }
+
+.gali_img {
+  width: 100%;
+  }
+
+@media only screen and (max-width: 721px) {
+  .gali_img {
+    width: 100%;
+ } }
+.gali_h2 {
+  font-size: 250%;
+  text-align: justify;
+  padding-bottom: 10%;
+  margin-left: 0%; }
+
+.gali_soustitre {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 2%;
+  margin-left: 0%; }
+
+.gali_p {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 0%; }
+
+.box_einstein {
+  width: 73%; }
+
+
+.box_einstein_img {
+  width: 20%; }
+
+.einstein_img {
+  width: 100%;
+ }
+
+@media only screen and (max-width: 721px) {
+  .einstein_img {
+    width: 100%;
+ } }
+.einstein_h2 {
+  font-size: 250%;
+  text-align: justify;
+  padding-bottom: 10%;
+  margin-left: 0%; }
+
+.einstein_soustitre {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 2%;
+  margin-left: 0%; }
+
+.einstein_p {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 0%; }
+
+.box_marie {
+  width: 73%; }
+
+.box_marie_p {
+  margin-left: 0%; }
+
+.box_marie_img {
+  width: 20%; }
+
+.marie_img {
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+ }
+
+@media only screen and (max-width: 721px) {
+  .marie_img {
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+ } }
+.marie_h2 {
+  font-size: 250%;
+  text-align: justify;
+  padding-bottom: 10%;
+  margin-left: 0%; }
+
+.marie_soustitre {
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 2%;
+  margin-left: 0%; }
+
+.marie_p {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 0%; }
+
+.title_ronde {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.formule_p {
+  font-size: 110%; }
+
+@media only screen and (max-width: 721px) {
+  .formule_p {
+    font-size: 80%; }
+
+  .formule_h2 {
+    font-size: 200%; }
+
+  .formule_soustitre {
+    font-size: 120%; } }
+@media only screen and (max-width: 615px) {
+  .formule_p {
+    font-size: 70%; }
+
+  .formule_h2 {
+    font-size: 170%; }
+
+  .formule_soustitre {
+    font-size: 110%; } }
+.form_image {
+  width: 20%; }
+
+.form_text {
+  width: 72%; }
+
+@media only screen and (max-width: 721px) {
+  .form_image {
+    width: 43%; }
+
+  .form_text {
+    width: 49%; } }
+.textphilosophique_h2 {
+  font-size: 130%; }
+
+@media only screen and (max-width: 1160px) {
+  .textphilosophique_h2 {
+    font-size: 110%; } }
+@media only screen and (max-width: 1000px) {
+  .textphilosophique_h2 {
+    font-size: 100%; } }
+@media only screen and (max-width: 915px) {
+  .textphilosophique_h2 {
+    font-size: 90%; } }
+@media only screen and (max-width: 830px) {
+  .textphilosophique_h2 {
+    font-size: 90%; } }
+@media only screen and (max-width: 721px) {
+  .textphilosophique_h2 {
+    font-size: 110%; } }
+@media only screen and (max-width: 500px) {
+  .textphilosophique_h2 {
+    font-size: 100%; } }
+@media only screen and (max-width: 460px) {
+  .textphilosophique_h2 {
+    font-size: 80%; } }
+@media only screen and (max-width: 360px) {
+  .textphilosophique_h2 {
+    font-size: 70%; } }
+.pit_textballon {
+  font-size: 100%;
+  text-align: justify; }
+
+@media only screen and (max-width: 1210px) {
+  .pit_textballon {
+    font-size: 80%;
+    text-align: justify; } }
+@media only screen and (max-width: 833px) {
+  .pit_textballon {
+    font-size: 70%;
+    text-align: justify; } }
+@media only screen and (max-width: 721px) {
+  .pit_textballon {
+    font-size: 80%;
+    text-align: justify; } }
+@media only screen and (max-width: 460px) {
+  .pit_textballon {
+    font-size: 60%;
+    text-align: justify; } }
+.textmagique {
+  width: 95%; }
+
+@media only screen and (max-width: 721px) {
+  .textmagique {
+    width: 80%; } }
+
+.textform_h {
+  font-size: 130%;
+  text-align: justify; }
+
+@media only screen and (max-width: 350px) {
+  .textform_h {
+    font-size: 110%;
+    text-align: justify; } }
+.grandeurA {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+@media only screen and (max-width: 500px) {
+  .bybob {
+    display: none; } }
+.escalier_1 {
+  height: 0px; }
+
+.escalier_2 {
+  height: 160px; }
+
+.escalier_3 {
+  height: 240px; }
+
+.escalier_4 {
+  height: 400px; }
+
+@media only screen and (max-width: 1314px) {
+  .escalier_1 {
+    height: 0px; }
+
+  .escalier_2 {
+    height: 80px; }
+
+  .escalier_3 {
+    height: 160px; }
+
+  .escalier_4 {
+    height: 240px; } }
+@media only screen and (max-width: 721px) {
+  .escalier_1 {
+    height: auto; }
+
+  .escalier_2 {
+    height: auto; }
+
+  .escalier_3 {
+    height: auto; }
+
+  .escalier_4 {
+    height: auto; } }
+.titrepartiecoaching {
+  font-size: 300%; }
+
+.pitbull_magique {
+  vertical-align: left;
+  width: 100%; }
+
+body {
+  margin-top: 0%; }
+
+.grossi_non_de_dieu {
+  font-size: 200%; }
+
+.rc_pad_rond {
+  padding: 20%;
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.font_cercle {
+  font-size: 150%; }
+
+.imgdown {
+  width: 15%; }
+
+.just8{
+  width: 80%;
+}
+@media only screen and (max-width: 721px) {
+
+.rc_text_ln{
+  font-size: 80%;
+  }}
+
+@media only screen and (max-width: 721px) {
+
+.text_pic{
+  font-size: 80%;
+  }}
+
+
+ @media only screen and (max-width: 721px) {
+
+.petit_esacalier{
+  height: 100px
+  }}
+ .animation_formuleindex{
+  height: 25px;
+ } 
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */

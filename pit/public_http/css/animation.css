@@ -1,0 +1,140 @@
+
+.chien_animation{
+
+
+
+    	animation-duration: 10s;    
+    	animation-iteration-count: infinite;
+    	animation-name: chien_disparition;
+
+}
+
+/* Safari 4.0 - 8.0 */
+
+@keyframes chien_disparition{
+    1% {}
+    100%{ display: none }
+  }
+
+  .animation_formuleindex:hover{
+      animation-duration: 3s;
+
+    animation-iteration-count: infinite;
+     animation-name: rougerouge;
+
+
+}
+@keyframes rougerouge{
+    0% {font-size: 100%;
+  color: #7f7f7f}
+    50%{    font-size: 130%;
+  color: #6E0005;}
+  100%{font-size: 100%;
+  color: #7f7f7f}
+  }
+.cadregrow:hover{
+	animation-duration: 3s;    
+    animation-iteration-count: infinite;
+     animation-name: cadre;
+
+    }
+@keyframes cadre{
+    0% {width :calc(100% - 50px); 
+    	border-radius: 0%;
+    }
+    50%{ width :calc(100% - 25px);
+    	border-radius: 25%;}
+    100% {width :calc(100% - 50px); 
+      border-radius: 0%;
+    }
+  }
+}@media only screen and (max-width: 721px) {
+.cadregrow:hover{
+	width: 49%;}
+}
+
+
+
+
+.cadregrow{
+  animation-duration: 10s;    
+    animation-iteration-count: infinite;
+     animation-name: cadre_nothover;
+
+    }
+@keyframes cadre_nothover{
+    0% {width :calc(100% - 50px); 
+      border-radius: 0%;
+    }
+    50%{
+      border-radius: 40%;}
+    100%{ width :calc(100% - 50px);
+      border-radius: 0%;}
+
+ }
+  
+}@media only screen and (max-width: 721px){
+.cadregrow:hover{
+  width: 49%;}
+
+.cadregrow{
+  width: 49%;}
+}
+
+
+.mouvement_hover:hover{
+    animation-duration: 10s;    
+    animation-iteration-count: infinite;
+     animation-name: mouvement_formule;
+
+}
+@keyframes mouvement_formule{
+    0% { border-radius: 0%;
+      background-color: red;
+    }
+    50%{
+      border-radius: 25%;
+      background-color: : white;
+    }
+    100%{ border-radius: 0%;
+      background-color: red;}
+
+ }
+ .apparition{
+      animation-duration: 5s;    
+    animation-iteration-count: infinite;
+     animation-name: magie_magie;
+ }
+@keyframes magie_magie{
+    0% { opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{ opacity: 0;}
+
+ }
+ .carousel_fadeout{
+        animation-duration: 1s;    
+     animation-name: out_out;
+ }
+@keyframes out_out{
+    0% { opacity: 1;
+    }
+    100%{ opacity: 0;
+          display: none!important;}
+
+}
+
+.carousel_fadein{
+        animation-duration: 1s;    
+     animation-name: in_in;
+ }
+@keyframes in_in{
+    0% { opacity: 0;
+    }
+    100%{ opacity: 1;
+      display: inline-block!important;}
+
+ }
+}
